@@ -1,0 +1,471 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Р’РµСЂСЃРёСЏ MSBuild 17.10.4+10fbfbf2e РґР»СЏ .NET Framework
+      РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 08.08.2024 15:45:34.
+      
+      РџСЂРѕРµРєС‚ "C:\\work\\zombie-dolls\\build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      PrepareForBuild:
+        РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "Debug\\".
+        РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
+        РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        РЎРѕР·РґР°РЅРёРµ "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+        РћР±СЂР°С‰РµРЅРёРµ Рє "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\work\\zombie-dolls\\build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Р¤Р°Р№Р» "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
+        РћР±СЂР°С‰РµРЅРёРµ Рє "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\3.30.0\\CompilerIdC\\CompilerIdC.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      
+      РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
+          РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
+          РћС€РёР±РѕРє: 0
+      
+      РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.54
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/work/zombie-dolls/build/CMakeFiles/3.30.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Р’РµСЂСЃРёСЏ MSBuild 17.10.4+10fbfbf2e РґР»СЏ .NET Framework
+      РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 08.08.2024 15:45:34.
+      
+      РџСЂРѕРµРєС‚ "C:\\work\\zombie-dolls\\build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      PrepareForBuild:
+        РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "Debug\\".
+        РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
+        РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        РЎРѕР·РґР°РЅРёРµ "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+        РћР±СЂР°С‰РµРЅРёРµ Рє "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\work\\zombie-dolls\\build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Р¤Р°Р№Р» "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
+        РћР±СЂР°С‰РµРЅРёРµ Рє "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\3.30.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+      
+      РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
+          РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
+          РћС€РёР±РѕРє: 0
+      
+      РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.45
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/work/zombie-dolls/build/CMakeFiles/3.30.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-waw0mj"
+      binary: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-waw0mj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-waw0mj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_df5d6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Р’РµСЂСЃРёСЏ MSBuild 17.10.4+10fbfbf2e РґР»СЏ .NET Framework
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 08.08.2024 15:45:35.
+        
+        РџСЂРѕРµРєС‚ "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-waw0mj\\cmTC_df5d6.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        PrepareForBuild:
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_df5d6.dir\\Debug\\".
+          РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-waw0mj\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_df5d6.dir\\Debug\\cmTC_df5d6.tlog\\".
+        InitializeBuildStatus:
+          РЎРѕР·РґР°РЅРёРµ "cmTC_df5d6.dir\\Debug\\cmTC_df5d6.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_df5d6.dir\\Debug\\cmTC_df5d6.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_df5d6.dir\\Debug\\\\" /Fd"cmTC_df5d6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.40.33813 РґР»СЏ x64
+          (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_df5d6.dir\\Debug\\\\" /Fd"cmTC_df5d6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-waw0mj\\Debug\\cmTC_df5d6.exe" /INCREMENTAL /ILK:"cmTC_df5d6.dir\\Debug\\cmTC_df5d6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-waw0mj/Debug/cmTC_df5d6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-waw0mj/Debug/cmTC_df5d6.lib" /MACHINE:X64  /machine:x64 cmTC_df5d6.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_df5d6.vcxproj -> C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-waw0mj\\Debug\\cmTC_df5d6.exe
+        FinalizeBuildStatus:
+          Р¤Р°Р№Р» "cmTC_df5d6.dir\\Debug\\cmTC_df5d6.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_df5d6.dir\\Debug\\cmTC_df5d6.tlog\\cmTC_df5d6.lastbuildstate".
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-waw0mj\\cmTC_df5d6.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        
+        РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
+            РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
+            РћС€РёР±РѕРє: 0
+        
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.42
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.40.33813.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-2embqb"
+      binary: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-2embqb"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-2embqb'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fabaa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Р’РµСЂСЃРёСЏ MSBuild 17.10.4+10fbfbf2e РґР»СЏ .NET Framework
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 08.08.2024 15:45:36.
+        
+        РџСЂРѕРµРєС‚ "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2embqb\\cmTC_fabaa.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        PrepareForBuild:
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_fabaa.dir\\Debug\\".
+          РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2embqb\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_fabaa.dir\\Debug\\cmTC_fabaa.tlog\\".
+        InitializeBuildStatus:
+          РЎРѕР·РґР°РЅРёРµ "cmTC_fabaa.dir\\Debug\\cmTC_fabaa.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_fabaa.dir\\Debug\\cmTC_fabaa.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fabaa.dir\\Debug\\\\" /Fd"cmTC_fabaa.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.40.33813 РґР»СЏ x64
+          (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_fabaa.dir\\Debug\\\\" /Fd"cmTC_fabaa.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2embqb\\Debug\\cmTC_fabaa.exe" /INCREMENTAL /ILK:"cmTC_fabaa.dir\\Debug\\cmTC_fabaa.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-2embqb/Debug/cmTC_fabaa.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-2embqb/Debug/cmTC_fabaa.lib" /MACHINE:X64  /machine:x64 cmTC_fabaa.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_fabaa.vcxproj -> C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2embqb\\Debug\\cmTC_fabaa.exe
+        FinalizeBuildStatus:
+          Р¤Р°Р№Р» "cmTC_fabaa.dir\\Debug\\cmTC_fabaa.tlog\\unsuccessfulbuild" СѓРґР°Р»СЏРµС‚СЃСЏ.
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_fabaa.dir\\Debug\\cmTC_fabaa.tlog\\cmTC_fabaa.lastbuildstate".
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-2embqb\\cmTC_fabaa.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        
+        РЎР±РѕСЂРєР° СѓСЃРїРµС€РЅРѕ Р·Р°РІРµСЂС€РµРЅР°.
+            РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
+            РћС€РёР±РѕРє: 0
+        
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.42
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.40.33813.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/work/rbfx-gl-biped/rbfx/build/install/share/CMake/Urho3DConfig.cmake:3 (find_dependency)"
+      - "CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-lindk1"
+      binary: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-lindk1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-lindk1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e8464.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Р’РµСЂСЃРёСЏ MSBuild 17.10.4+10fbfbf2e РґР»СЏ .NET Framework
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 08.08.2024 15:46:06.
+        
+        РџСЂРѕРµРєС‚ "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\cmTC_e8464.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        PrepareForBuild:
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_e8464.dir\\Debug\\".
+          РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_e8464.dir\\Debug\\cmTC_e8464.tlog\\".
+        InitializeBuildStatus:
+          РЎРѕР·РґР°РЅРёРµ "cmTC_e8464.dir\\Debug\\cmTC_e8464.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_e8464.dir\\Debug\\cmTC_e8464.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e8464.dir\\Debug\\\\" /Fd"cmTC_e8464.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\src.c"
+          РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.40.33813 РґР»СЏ x64
+          (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e8464.dir\\Debug\\\\" /Fd"cmTC_e8464.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\src.c"
+          src.c
+        C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\src.c(1,10): error C1083: РќРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РІРєР»СЋС‡РµРЅРёРµ: pthread.h: No such file or directory, [C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\cmTC_e8464.vcxproj]
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\cmTC_e8464.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
+        
+        РћС€РёР±РєР° СЃР±РѕСЂРєРё.
+        
+        "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\cmTC_e8464.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
+        (Р¦РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ ClCompile) -> 
+          C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\src.c(1,10): error C1083: РќРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» РІРєР»СЋС‡РµРЅРёРµ: pthread.h: No such file or directory, [C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lindk1\\cmTC_e8464.vcxproj]
+        
+            РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
+            РћС€РёР±РѕРє: 1
+        
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.28
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/work/rbfx-gl-biped/rbfx/build/install/share/CMake/Urho3DConfig.cmake:3 (find_dependency)"
+      - "CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-yl8998"
+      binary: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-yl8998"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-yl8998'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4590a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Р’РµСЂСЃРёСЏ MSBuild 17.10.4+10fbfbf2e РґР»СЏ .NET Framework
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 08.08.2024 15:46:07.
+        
+        РџСЂРѕРµРєС‚ "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\cmTC_4590a.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        PrepareForBuild:
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_4590a.dir\\Debug\\".
+          РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_4590a.dir\\Debug\\cmTC_4590a.tlog\\".
+        InitializeBuildStatus:
+          РЎРѕР·РґР°РЅРёРµ "cmTC_4590a.dir\\Debug\\cmTC_4590a.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_4590a.dir\\Debug\\cmTC_4590a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4590a.dir\\Debug\\\\" /Fd"cmTC_4590a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\CheckFunctionExists.c"
+          РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.40.33813 РґР»СЏ x64
+          (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4590a.dir\\Debug\\\\" /Fd"cmTC_4590a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\Debug\\cmTC_4590a.exe" /INCREMENTAL /ILK:"cmTC_4590a.dir\\Debug\\cmTC_4590a.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-yl8998/Debug/cmTC_4590a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-yl8998/Debug/cmTC_4590a.lib" /MACHINE:X64  /machine:x64 cmTC_4590a.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthreads.lib" [C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\cmTC_4590a.vcxproj]
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\cmTC_4590a.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
+        
+        РћС€РёР±РєР° СЃР±РѕСЂРєРё.
+        
+        "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\cmTC_4590a.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
+        (Р¦РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ Link) -> 
+          LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthreads.lib" [C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yl8998\\cmTC_4590a.vcxproj]
+        
+            РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
+            РћС€РёР±РѕРє: 1
+        
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.33
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "C:/work/rbfx-gl-biped/rbfx/build/install/share/CMake/Urho3DConfig.cmake:3 (find_dependency)"
+      - "CMakeLists.txt:15 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-z640ta"
+      binary: "C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-z640ta"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-z640ta'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fb513.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Р’РµСЂСЃРёСЏ MSBuild 17.10.4+10fbfbf2e РґР»СЏ .NET Framework
+        РЎР±РѕСЂРєР° РЅР°С‡Р°С‚Р° 08.08.2024 15:46:07.
+        
+        РџСЂРѕРµРєС‚ "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\cmTC_fb513.vcxproj" РІ СѓР·Р»Рµ 1 (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ).
+        PrepareForBuild:
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_fb513.dir\\Debug\\".
+          РЎС‚СЂСѓРєС‚СѓСЂРёСЂРѕРІР°РЅРЅС‹Р№ РІС‹РІРѕРґ РІРєР»СЋС‡РµРЅ. Р¤РѕСЂРјР°С‚РёСЂРѕРІР°РЅРёРµ РґРёР°РіРЅРѕСЃС‚РёРєРё РєРѕРјРїРёР»СЏС‚РѕСЂР° Р±СѓРґРµС‚ РѕС‚СЂР°Р¶Р°С‚СЊ РёРµСЂР°СЂС…РёСЋ РѕС€РёР±РѕРє. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. https://aka.ms/cpp/structured-output.
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\Debug\\".
+          РЎРѕР·РґР°РЅРёРµ РєР°С‚Р°Р»РѕРіР° "cmTC_fb513.dir\\Debug\\cmTC_fb513.tlog\\".
+        InitializeBuildStatus:
+          РЎРѕР·РґР°РЅРёРµ "cmTC_fb513.dir\\Debug\\cmTC_fb513.tlog\\unsuccessfulbuild", С‚Р°Рє РєР°Рє Р±С‹Р»Рѕ Р·Р°РґР°РЅРѕ "AlwaysCreate".
+          РћР±СЂР°С‰РµРЅРёРµ Рє "cmTC_fb513.dir\\Debug\\cmTC_fb513.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fb513.dir\\Debug\\\\" /Fd"cmTC_fb513.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\CheckFunctionExists.c"
+          РћРїС‚РёРјРёР·РёСЂСѓСЋС‰РёР№ РєРѕРјРїРёР»СЏС‚РѕСЂ Microsoft (R) C/C++ РІРµСЂСЃРёРё 19.40.33813 РґР»СЏ x64
+          (C) РљРѕСЂРїРѕСЂР°С†РёСЏ РњР°Р№РєСЂРѕСЃРѕС„С‚ (Microsoft Corporation).  Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_fb513.dir\\Debug\\\\" /Fd"cmTC_fb513.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\Debug\\cmTC_fb513.exe" /INCREMENTAL /ILK:"cmTC_fb513.dir\\Debug\\cmTC_fb513.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-z640ta/Debug/cmTC_fb513.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/work/zombie-dolls/build/CMakeFiles/CMakeScratch/TryCompile-z640ta/Debug/cmTC_fb513.lib" /MACHINE:X64  /machine:x64 cmTC_fb513.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthread.lib" [C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\cmTC_fb513.vcxproj]
+        РЎР±РѕСЂРєР° РїСЂРѕРµРєС‚Р° "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\cmTC_fb513.vcxproj" Р·Р°РІРµСЂС€РµРЅР° (С†РµР»РµРІС‹Рµ РѕР±СЉРµРєС‚С‹ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) СЃ РѕС€РёР±РєРѕР№.
+        
+        РћС€РёР±РєР° СЃР±РѕСЂРєРё.
+        
+        "C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\cmTC_fb513.vcxproj" (С†РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ) (1) ->
+        (Р¦РµР»РµРІРѕР№ РѕР±СЉРµРєС‚ Link) -> 
+          LINK : fatal error LNK1104: РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ С„Р°Р№Р» "pthread.lib" [C:\\work\\zombie-dolls\\build\\CMakeFiles\\CMakeScratch\\TryCompile-z640ta\\cmTC_fb513.vcxproj]
+        
+            РџСЂРµРґСѓРїСЂРµР¶РґРµРЅРёР№: 0
+            РћС€РёР±РѕРє: 1
+        
+        РџСЂРѕС€Р»Рѕ РІСЂРµРјРµРЅРё 00:00:00.33
+        
+      exitCode: 1
+...
