@@ -1,4 +1,0 @@
-<material>
-    <technique name="Techniques/Editor/BasicVColUnlitAlphaOverlay.xml" />
-    <texture slot="Albedo" name="Textures/Editor/IconPointLight.png" />
-</material>
