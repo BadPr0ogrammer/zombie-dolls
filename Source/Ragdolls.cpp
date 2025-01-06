@@ -197,7 +197,7 @@ void Ragdolls::CreateScene()
 	gunNode_ = cameraNode_->CreateChild("Gun Node");
 	gunNode_->SetPosition(Vector3(0.0f, -0.2f, 0.5f));
 	auto* model = gunNode_->CreateComponent<StaticModel>();
-	model->SetModel(cache->GetResource<Model>("Models/ar style gun.fbx.d/Models/ar15.mdl"));
+	model->SetModel(cache->GetResource<Model>("Models/ar_style_gun.fbx.d/Models/ar15.mdl"));
 	model->SetCastShadows(true);
 
 	auto q = Quaternion(-90.0f, 90.0f, 90.0f);
