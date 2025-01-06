@@ -3,14 +3,17 @@ project (zombie-dolls)
 
 set (CMAKE_CXX_STANDARD 17)
 
-set (Urho3D_DIR "" CACHE PATH "../rbfx/build/install/share/CMake")
+set (Urho3D_DIR "../rbfx/build/install/share/CMake")
 message (STATUS "set Urho3D_DIR to ${Urho3D_DIR}")
 
-set (Urho3D_Generated_DIR "" CACHE PATH "../rbfx/build/install/share/CMake")
+set (Urho3D_Generated_DIR "../rbfx/build/install/share/CMake")
 message(STATUS "set Urho3D_Generated_DIR to ${Urho3D_Generated_DIR}")
 
-add_executable (${PROJECT_NAME}
-    ${PROJECT_SOURCE_DIR}/Source/SamplesManager.cpp)
+if (WIN32)
+add_executable (${PROJECT_NAME} WIN32 ${PROJECT_SOURCE_DIR}/Source/SamplesManager.cpp)
+else()
+add_executable (${PROJECT_NAME}       ${PROJECT_SOURCE_DIR}/Source/SamplesManager.cpp)
+endif()
 
 find_package (Urho3D REQUIRED ${Urho3D_DIR})
 
@@ -32,7 +35,7 @@ target_include_directories (${PROJECT_NAME} PRIVATE
 
 target_compile_definitions (${PROJECT_NAME} PRIVATE ${Urho3Ddefs})
 
-target_link_libraries (${PROJECT_NAME} PRIVATE ${Urho3Dlink})
+target_link_libraries (${PROJECT_NAME} PRIVATE Urho3D)
 
 # copy to the target "${Urho3D_Generated_DIR}/../../bin/Debug/Urho3D.dll"
 # set (Urho3DDll "${Urho3D_Generated_DIR}/../../bin/Debug/Urho3D.dll")

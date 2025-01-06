@@ -45,10 +45,8 @@
 
 #include "SamplesManager.h"
 
-using namespace MonsterDolls;
-
 // Expands to this example's entry-point
-URHO3D_DEFINE_APPLICATION_MAIN(SamplesManager);
+URHO3D_DEFINE_APPLICATION_MAIN(MonsterDolls::SamplesManager);
 
 using namespace MonsterDolls;
 
