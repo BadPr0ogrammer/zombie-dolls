@@ -20,18 +20,24 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 //
+
 #pragma once
 
 #include <Urho3D/Engine/StateManager.h>
 #include <Urho3D/UI/SplashScreen.h>
 #include <Urho3D/Plugins/PluginManager.h>
 
-#include "Sample.h"
-
 #include <string>
 #include <vector>
 
-using namespace Urho3D;
+#include "GameState.h"
+
+using Urho3D::Vector2;
+using Urho3D::Vector3;
+using Urho3D::Quaternion;
+using Urho3D::StringHash;
+using Urho3D::VariantMap;
+using Urho3D::SharedPtr;
 
 namespace MonsterDolls
 {
@@ -43,14 +49,14 @@ namespace MonsterDolls
 		StringHash type_;
 	};
 
-	class SamplesManager : public Application
+	class GameApp : public Urho3D::Application
 	{
 		// Enable type information.
-		URHO3D_OBJECT(SamplesManager, Application);
+		URHO3D_OBJECT(GameApp, Urho3D::Application);
 
 	public:
 		/// Construct.
-		explicit SamplesManager(Context* context);
+		explicit GameApp(Urho3D::Context* context);
 
 		/// Setup before engine initialization. Modifies the engine parameters.
 		void Setup() override;
@@ -62,7 +68,7 @@ namespace MonsterDolls
 		/// Return command line arguments.
 		const ea::vector<ea::string>& GetArgs() const { return commandLineArgs_; }
 
-		ApplicationState* GetMenuState() const { return startupScreen_; }
+		Urho3D::ApplicationState* GetMenuState() const { return startupScreen_; }
 
 	private:
 		///
@@ -75,11 +81,11 @@ namespace MonsterDolls
 		/// Start execution of specified sample.
 		void StartSample(StringHash sampleType);
 		///
-		SharedPtr<ApplicationState> startupScreen_;
+		SharedPtr<Urho3D::ApplicationState> startupScreen_;
 		///
-		SharedPtr<UIElement> startButtonHolder_;
+		SharedPtr<Urho3D::UIElement> startButtonHolder_;
 		/// Logo sprite.
-		SharedPtr<Sprite> logoSprite_;
+		SharedPtr<Urho3D::Sprite> logoSprite_;
 		///
 		bool isClosing_ = false;
 		/// Array of sample command line args. Use STL for compatibility with CLI.
@@ -88,9 +94,9 @@ namespace MonsterDolls
 
 		/// Generic Serializable inspector.
 		/// @{
-		SharedPtr<Scene> inspectorNode_;
+		SharedPtr<Urho3D::Scene> inspectorNode_;
 		bool oldMouseVisible_{};
-		MouseMode oldMouseMode_{};
+		Urho3D::MouseMode oldMouseMode_{};
 		/// @}
 	};
 }

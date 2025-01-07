@@ -22,36 +22,47 @@
 
 #pragma once
 
+#include <Urho3D/Engine/EngineDefs.h>
+#include <Urho3D/Engine/Engine.h>
 #include <Urho3D/Physics/CollisionShape.h>
 #include <Urho3D/Physics/Constraint.h>
 
-using namespace Urho3D;
+#include "Ragdolls.h"
+
+using Urho3D::Vector2;
+using Urho3D::Vector3;
+using Urho3D::Quaternion;
+using Urho3D::StringHash;
+using Urho3D::VariantMap;
+using Urho3D::ShapeType;
+using Urho3D::ConstraintType;
 
 namespace MonsterDolls
 {
-	class Ragdolls;
-
 	/// Custom component that creates a ragdoll upon collision.
-	class CreateRagdoll : public Component
+	class CreateRagdoll : public Urho3D::Component
 	{
-		URHO3D_OBJECT(CreateRagdoll, Component);
+		URHO3D_OBJECT(CreateRagdoll, Urho3D::Component);
 
 	public:
 		/// Construct.
-		explicit CreateRagdoll(Context* context);
+		explicit CreateRagdoll(Urho3D::Context* context);
 
 		void SetRagdolls(Ragdolls* ragdolls) { ragdolls_ = ragdolls; }
 	protected:
 		/// Handle node being assigned.
-		void OnNodeSet(Node* previousNode, Node* currentNode) override;
+		void OnNodeSet(Urho3D::Node* previousNode, Urho3D::Node* currentNode) override;
 
 	private:
 		/// Handle scene node's physics collision.
 		void HandleNodeCollision(StringHash eventType, VariantMap& eventData);
 		/// Make a bone physical by adding RigidBody and CollisionShape components.
-		void CreateRagdollBone(const ea::string& boneName, ShapeType type, const Vector3& size, const Vector3& position, const Quaternion& rotation);
+		void CreateRagdollBone(const ea::string& boneName, ShapeType type, const Vector3& size, 
+			const Vector3& position, const Quaternion& rotation);
 		/// Join two bones with a Constraint component.
-		void CreateRagdollConstraint(const ea::string& boneName, const ea::string& parentName, ConstraintType type, const Vector3& axis, const Vector3& parentAxis, const Vector2& highLimit, const Vector2& lowLimit, bool disableCollision = true);
+		void CreateRagdollConstraint(const ea::string& boneName, const ea::string& parentName, 
+			ConstraintType type, const Vector3& axis, const Vector3& parentAxis, const Vector2& highLimit, 
+			const Vector2& lowLimit, bool disableCollision = true);
 
 		Ragdolls* ragdolls_ = 0;
 	};

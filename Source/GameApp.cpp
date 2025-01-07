@@ -43,21 +43,20 @@
 
 #include "Rotator.h"
 
-#include "SamplesManager.h"
+#include "GameApp.h"
 
 // Expands to this example's entry-point
-URHO3D_DEFINE_APPLICATION_MAIN(MonsterDolls::SamplesManager);
+URHO3D_DEFINE_APPLICATION_MAIN(MonsterDolls::GameApp);
 
 using namespace MonsterDolls;
+using namespace Urho3D;
 
-//namespace Urho3D{
-
-SamplesManager::SamplesManager(Context* context) :
+GameApp::GameApp(Context* context) :
 	Application(context)
 {
 }
 
-void SamplesManager::Setup()
+void GameApp::Setup()
 {
 	// Modify engine startup parameters
 	engineParameters_[EP_WINDOW_TITLE] = "Monster Dolls";
@@ -85,7 +84,7 @@ void SamplesManager::Setup()
 	engineParameters_[EP_AUTOLOAD_PATHS] = "Autoload";
 }
 
-void SamplesManager::Start()
+void GameApp::Start()
 {
 	ResourceCache* cache = context_->GetSubsystem<ResourceCache>();
 	VirtualFileSystem* vfs = context_->GetSubsystem<VirtualFileSystem>();
@@ -121,12 +120,12 @@ void SamplesManager::Start()
 		debugHud->ToggleAll();
 #endif
 	auto* input = context_->GetSubsystem<Input>();
-	SubscribeToEvent(E_RELEASED, &SamplesManager::OnClickSample);
-	//// SubscribeToEvent(&sampleSelectionScreen_->dpadAdapter_, E_KEYUP, &SamplesManager::OnArrowKeyPress);
-	SubscribeToEvent(input, E_KEYUP, &SamplesManager::OnKeyPress);
-	SubscribeToEvent(E_SAMPLE_EXIT_REQUESTED, &SamplesManager::OnCloseCurrentSample);
-	//// SubscribeToEvent(E_JOYSTICKBUTTONDOWN, &SamplesManager::OnButtonPress);
-	SubscribeToEvent(E_BEGINFRAME, &SamplesManager::OnFrameStart);
+	SubscribeToEvent(E_RELEASED, &GameApp::OnClickSample);
+	//// SubscribeToEvent(&sampleSelectionScreen_->dpadAdapter_, E_KEYUP, &GameApp::OnArrowKeyPress);
+	SubscribeToEvent(input, E_KEYUP, &GameApp::OnKeyPress);
+	SubscribeToEvent(E_SAMPLE_EXIT_REQUESTED, &GameApp::OnCloseCurrentSample);
+	//// SubscribeToEvent(E_JOYSTICKBUTTONDOWN, &GameApp::OnButtonPress);
+	SubscribeToEvent(E_BEGINFRAME, &GameApp::OnFrameStart);
 
 	startupScreen_->GetUIRoot()->SetDefaultStyle(cache->GetResource<XMLFile>("UI/DefaultStyle.xml"));
 	IntVector2 listSize = VectorMin(IntVector2(300, 36/*600*/), ui->GetRoot()->GetSize());
@@ -170,13 +169,13 @@ void SamplesManager::Start()
 	logoSprite_->SetPriority(-100);
 }
 
-void SamplesManager::Stop()
+void GameApp::Stop()
 {
 	engine_->DumpResources(true);
 	GetSubsystem<StateManager>()->Reset();
 }
 
-void SamplesManager::OnClickSample(VariantMap& args)
+void GameApp::OnClickSample(VariantMap& args)
 {
 	using namespace Released;
 	StringHash sampleType = static_cast<UIElement*>(args[P_ELEMENT].GetPtr())->GetVar("SampleType").GetStringHash();
@@ -186,7 +185,7 @@ void SamplesManager::OnClickSample(VariantMap& args)
 	StartSample(sampleType);
 }
 
-void SamplesManager::StartSample(StringHash sampleType)
+void GameApp::StartSample(StringHash sampleType)
 {
 	UI* ui = context_->GetSubsystem<UI>();
 	ui->SetFocusElement(nullptr);
@@ -196,7 +195,7 @@ void SamplesManager::StartSample(StringHash sampleType)
 	context_->GetSubsystem<StateManager>()->EnqueueState(sampleType, args);
 }
 
-void SamplesManager::OnKeyPress(VariantMap& args)
+void GameApp::OnKeyPress(VariantMap& args)
 {
 	using namespace KeyUp;
 
@@ -204,7 +203,7 @@ void SamplesManager::OnKeyPress(VariantMap& args)
 
 	// Close console (if open) or exit when ESC is pressed
 	StateManager* stateManager = GetSubsystem<StateManager>();
-	auto* currentSample = dynamic_cast<Sample*>(stateManager->GetState());
+	auto* currentSample = dynamic_cast<GameState*>(stateManager->GetState());
 	if (key == KEY_ESCAPE && (!currentSample || currentSample->IsEscapeEnabled()))
 		isClosing_ = true;
 
@@ -241,7 +240,7 @@ void SamplesManager::OnKeyPress(VariantMap& args)
 
 }
 
-void SamplesManager::OnFrameStart()
+void GameApp::OnFrameStart()
 {
 
 	if (isClosing_)
@@ -277,7 +276,7 @@ void SamplesManager::OnFrameStart()
 	}
 }
 
-void SamplesManager::OnCloseCurrentSample()
+void GameApp::OnCloseCurrentSample()
 {
 	isClosing_ = true;
 }

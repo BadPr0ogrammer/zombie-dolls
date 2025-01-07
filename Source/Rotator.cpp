@@ -27,6 +27,7 @@
 #include <Urho3D/DebugNew.h>
 
 using namespace MonsterDolls;
+using namespace Urho3D;
 
 Rotator::Rotator(Context* context) :
     LogicComponent(context),

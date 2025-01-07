@@ -24,17 +24,9 @@
 
 #include <Urho3D/Scene/ShakeComponent.h>
 
-#include "Sample.h"
-
 #include <list>
 
-namespace Urho3D
-{
-
-	class Node;
-	class Scene;
-
-}
+#include "GameState.h"
 
 namespace MonsterDolls
 {
@@ -43,13 +35,13 @@ namespace MonsterDolls
 	///     - Detecting physics collisions
 	///     - Moving an AnimatedModel's bones with physics and connecting them with constraints
 	///     - Using rolling friction to stop rolling objects from moving infinitely
-	class Ragdolls : public Sample
+	class Ragdolls : public GameState
 	{
-		URHO3D_OBJECT(Ragdolls, Sample);
+		URHO3D_OBJECT(Ragdolls, GameState);
 
 	public:
 		/// Construct.
-		explicit Ragdolls(Context* context);
+		explicit Ragdolls(Urho3D::Context* context);
 
 		/// Setup after engine initialization and before running the main loop.
 		void Start() override;
@@ -105,9 +97,9 @@ namespace MonsterDolls
 		/// Flag for drawing debug geometry.
 		bool drawDebug_;
 
-		Node* gunNode_ = 0;
-		Node* shapeNode_ = 0;
-		ShakeComponent* shakeComponent_ = 0;
-		Node* zombiesNode_ = 0;
+		Urho3D::Node* gunNode_ = 0;
+		Urho3D::Node* shapeNode_ = 0;
+		Urho3D::ShakeComponent* shakeComponent_ = 0;
+		Urho3D::Node* zombiesNode_ = 0;
 	};
 }

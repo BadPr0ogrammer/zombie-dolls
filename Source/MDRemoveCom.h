@@ -4,21 +4,19 @@
 #include <Urho3D/Scene/Scene.h>
 #include <Urho3D/Scene/LogicComponent.h>
 
-using namespace Urho3D;
-
 namespace MonsterDolls {
-	class MDRemoveCom : public LogicComponent
+	class MDRemoveCom : public Urho3D::LogicComponent
 	{
-		URHO3D_OBJECT(MDRemoveCom, LogicComponent);
+		URHO3D_OBJECT(MDRemoveCom, Urho3D::LogicComponent);
 	public:
-		MDRemoveCom(Context* context)
-			: LogicComponent(context)
+		MDRemoveCom(Urho3D::Context* context)
+			: Urho3D::LogicComponent(context)
 		{
-			SetUpdateEventMask(USE_UPDATE);
+			SetUpdateEventMask(Urho3D::USE_UPDATE);
 		}
 		void Update(float timeStep) override;
 		/// Register object factory and attributes.
-		static void RegisterObject(Context* context);
+		static void RegisterObject(Urho3D::Context* context);
 
 		void SetCountNum(int i) { mdCountNum_ = i; }
 	private:

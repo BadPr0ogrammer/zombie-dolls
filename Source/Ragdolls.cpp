@@ -64,15 +64,15 @@
 
 #include <Urho3D/DebugNew.h>
 
+using namespace MonsterDolls;
+using namespace Urho3D;
 
 // Create animated models
 const float MODEL_MOVE_SPEED = 3.0f;
 const BoundingBox bounds(Vector3(-20.0f, 0.0f, -15.0f), Vector3(20.0f, 0.0f, 20.0f));
 
-using namespace MonsterDolls;
-
 Ragdolls::Ragdolls(Context* context)
-	: Sample(context)
+	: GameState(context)
 	, drawDebug_(false)
 {
 	// Register an object factory for our custom CreateRagdoll component so that we can create them to scene nodes
@@ -91,7 +91,7 @@ Ragdolls::Ragdolls(Context* context)
 void Ragdolls::Start()
 {
 	// Execute base class startup
-	Sample::Start();
+	GameState::Start();
 
 	// Create the scene content
 	CreateScene();

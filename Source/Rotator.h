@@ -24,19 +24,18 @@
 
 #include <Urho3D/Scene/LogicComponent.h>
 
-// All Urho3D classes reside in namespace Urho3D
-using namespace Urho3D;
+using Urho3D::Vector3;
 
 namespace MonsterDolls
 {
 	/// Custom logic component for rotating a scene node.
-	class Rotator : public LogicComponent
+	class Rotator : public Urho3D::LogicComponent
 	{
-		URHO3D_OBJECT(Rotator, LogicComponent);
+		URHO3D_OBJECT(Rotator, Urho3D::LogicComponent);
 
 	public:
 		/// Construct.
-		explicit Rotator(Context* context);
+		explicit Rotator(Urho3D::Context* context);
 
 		/// Set rotation speed about the Euler axes. Will be scaled with scene update time step.
 		void SetRotationSpeed(const Vector3& speed);

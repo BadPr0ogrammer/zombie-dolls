@@ -5,6 +5,7 @@
 #include "MDRemoveCom.h"
 
 using namespace MonsterDolls;
+using namespace Urho3D;
 
 void MDRemoveCom::Update(float timeStep)
 {

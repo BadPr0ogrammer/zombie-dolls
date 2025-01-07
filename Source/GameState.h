@@ -50,20 +50,25 @@
 #include <Urho3D/IO/Log.h>
 #include <Urho3D/Core/Profiler.h>
 
-
 // All Urho3D classes reside in namespace Urho3D
-using namespace Urho3D;
+using Urho3D::Vector2;
+using Urho3D::Vector3;
+using Urho3D::Quaternion;
+using Urho3D::StringHash;
+using Urho3D::VariantMap;
+using Urho3D::StringVariantMap;
+using Urho3D::SharedPtr;
 
-const float TOUCH_SENSITIVITY = 2.0f;
-
-/// Send this event to exit sample.
 URHO3D_EVENT(E_SAMPLE_EXIT_REQUESTED, SampleExitRequested)
 {
 }
 
+/// Send this event to exit sample.
 namespace MonsterDolls
 {
-	/// Sample class, as framework for all samples.
+	const float TOUCH_SENSITIVITY = 2.0f;
+
+	/// GameState class, as framework for all samples.
 	///    - Initialization of the Urho3D engine (in Application class)
 	///    - Modify engine parameters for windowed mode and to show the class name as title
 	///    - Create Urho3D logo at screen
@@ -73,14 +78,14 @@ namespace MonsterDolls
 	///    - Take screenshot with key 9
 	///    - Handle Esc key down to hide Console or exit application
 	///    - Init touch input on mobile platform using screen joysticks (patched for each individual sample)
-	class Sample : public ApplicationState
+	class GameState : public Urho3D::ApplicationState
 	{
 		// Enable type information.
-		URHO3D_OBJECT(Sample, ApplicationState);
+		URHO3D_OBJECT(GameState, Urho3D::ApplicationState);
 
 	public:
 		/// Construct.
-		explicit Sample(Context* context);
+		explicit GameState(Urho3D::Context* context);
 
 		/// Activate game state. Executed by StateManager.
 		virtual void Activate(StringVariantMap& bundle) override;
@@ -100,9 +105,9 @@ namespace MonsterDolls
 
 	protected:
 		/// Create or update skybox with default model and material.
-		void SetDefaultSkybox(Scene* scene);
+		void SetDefaultSkybox(Urho3D::Scene* scene);
 		/// Return XML patch instructions for screen joystick layout for a specific sample app, if any.
-		virtual ea::string GetScreenJoystickPatchString() const { return EMPTY_STRING; }
+		virtual ea::string GetScreenJoystickPatchString() const { return Urho3D::EMPTY_STRING; }
 		/// Initialize touch input on mobile platform.
 		void InitTouchInput();
 		/// Control logo visibility.
@@ -113,13 +118,13 @@ namespace MonsterDolls
 		void PlaySoundEffect(const ea::string& soundName);
 	protected:
 		/// Logo sprite.
-		SharedPtr<Sprite> logoSprite_;
+		SharedPtr<Urho3D::Sprite> logoSprite_;
 	public:
 		/// Scene.
-		SharedPtr<Scene> scene_;
+		SharedPtr<Urho3D::Scene> scene_;
 	protected:
 		/// Camera scene node.
-		SharedPtr<Node> cameraNode_;
+		SharedPtr<Urho3D::Node> cameraNode_;
 		/// Camera yaw angle.
 		float yaw_;
 		/// Camera pitch angle.

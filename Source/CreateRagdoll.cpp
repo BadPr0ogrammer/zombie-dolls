@@ -30,16 +30,14 @@
 #include <Urho3D/Graphics/Animation.h>
 #include <Urho3D/Graphics/AnimationController.h>
 #include <Urho3D/Graphics/GraphicsEvents.h>
-
+#include <Urho3D/DebugNew.h>
 
 #include "CreateRagdoll.h"
-#include "Ragdolls.h"
 #include "Mover.h"
 #include "MDRemoveCom.h"
 
-#include <Urho3D/DebugNew.h>
-
 using namespace MonsterDolls;
+using namespace Urho3D;
 
 CreateRagdoll::CreateRagdoll(Context* context) :
 	Component(context)

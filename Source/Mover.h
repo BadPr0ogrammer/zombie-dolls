@@ -24,23 +24,23 @@
 
 #include <Urho3D/Scene/LogicComponent.h>
 
-using namespace Urho3D;
+using Urho3D::Vector3;
 
 namespace MonsterDolls
 {
 	class Ragdolls;
 
 	/// Custom logic component for moving the animated model and rotating at area edges.
-	class Mover3D : public LogicComponent
+	class Mover3D : public Urho3D::LogicComponent
 	{
-		URHO3D_OBJECT(Mover3D, LogicComponent);
+		URHO3D_OBJECT(Mover3D, Urho3D::LogicComponent);
 
 	public:
 		/// Construct.
-		explicit Mover3D(Context* context);
+		explicit Mover3D(Urho3D::Context* context);
 
 		/// Set motion parameters: forward movement speed, and movement boundaries.
-		void SetParameters(const Vector3& moveSpeed, const BoundingBox& bounds, Ragdolls* ragdolls);
+		void SetParameters(const Vector3& moveSpeed, const Urho3D::BoundingBox& bounds, Ragdolls* ragdolls);
 		/// Handle scene update. Called by LogicComponent base class.
 		void Update(float timeStep) override;
 
@@ -48,15 +48,15 @@ namespace MonsterDolls
 		Vector3 GetMoveSpeed() const { return moveSpeed_; }
 		/// Return rotation speed.
 		/// Return movement boundaries.
-		const BoundingBox& GetBounds() const { return bounds_; }
+		const Urho3D::BoundingBox& GetBounds() const { return bounds_; }
 
 	private:
 		/// movement speed.
 		Vector3 moveSpeed_;
 		/// Movement boundaries.
-		BoundingBox bounds_;
+		Urho3D::BoundingBox bounds_;
 
-		Mutex mdMutex_;
+		Urho3D::Mutex mdMutex_;
 		Ragdolls* ragdolls_ = 0;
 	};
 }

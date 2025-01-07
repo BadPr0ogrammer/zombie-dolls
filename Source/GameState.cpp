@@ -24,14 +24,15 @@
 #   include <Urho3D/RmlUI/RmlUI.h>
 #endif
 
-#include "Sample.h"
-#include "SamplesManager.h"
+#include "GameState.h"
+#include "GameApp.h"
 #include <Urho3D/Graphics/Skybox.h>
 #include <Urho3D/Graphics/Model.h>
 
 using namespace MonsterDolls;
+using namespace Urho3D;
 
-Sample::Sample(Context* context) :
+GameState::GameState(Context* context) :
     ApplicationState(context),
     yaw_(0.0f),
     pitch_(0.0f),
@@ -45,25 +46,25 @@ Sample::Sample(Context* context) :
 }
 
 /// Activate game state. Executed by StateManager.
-void Sample::Activate(StringVariantMap& bundle)
+void GameState::Activate(StringVariantMap& bundle)
 {
     ApplicationState::Activate(bundle);
     Start(bundle["Args"].GetStringVector());
 }
 
 /// Deactivate game screen. Executed by Application.
-void Sample::Deactivate()
+void GameState::Deactivate()
 {
     Stop();
     ApplicationState::Deactivate();
 }
 
-void Sample::Start(const ea::vector<ea::string>& args)
+void GameState::Start(const ea::vector<ea::string>& args)
 {
     Start();
 }
 
-void Sample::Start()
+void GameState::Start()
 {
     auto* input = context_->GetSubsystem<Input>();
 
@@ -72,7 +73,7 @@ void Sample::Start()
         InitTouchInput();
     else if (GetSubsystem<Input>()->GetNumJoysticks() == 0)
         // On desktop platform, do not detect touch when we already got a joystick
-        SubscribeToEvent(E_TOUCHBEGIN, URHO3D_HANDLER(Sample, HandleTouchBegin));
+        SubscribeToEvent(E_TOUCHBEGIN, URHO3D_HANDLER(GameState, HandleTouchBegin));
 
     if (!GetSubsystem<Engine>()->IsHeadless())
     {
@@ -85,14 +86,14 @@ void Sample::Start()
     }
 
     // Subscribe key down event
-    SubscribeToEvent(input, E_KEYDOWN, URHO3D_HANDLER(Sample, HandleKeyDown));
+    SubscribeToEvent(input, E_KEYDOWN, URHO3D_HANDLER(GameState, HandleKeyDown));
     // Subscribe key up event
-    SubscribeToEvent(input, E_KEYUP, URHO3D_HANDLER(Sample, HandleKeyUp));
+    SubscribeToEvent(input, E_KEYUP, URHO3D_HANDLER(GameState, HandleKeyUp));
     // Subscribe scene update event
-    SubscribeToEvent(E_SCENEUPDATE, URHO3D_HANDLER(Sample, HandleSceneUpdate));
+    SubscribeToEvent(E_SCENEUPDATE, URHO3D_HANDLER(GameState, HandleSceneUpdate));
 }
 
-void Sample::Stop()
+void GameState::Stop()
 {
     if (screenJoystickIndex_ != M_MAX_UNSIGNED)
     {
@@ -102,7 +103,7 @@ void Sample::Stop()
     }
 }
 
-void Sample::SetDefaultSkybox(Scene* scene)
+void GameState::SetDefaultSkybox(Scene* scene)
 {
     ResourceCache* cache = GetSubsystem<ResourceCache>();
 
@@ -111,7 +112,7 @@ void Sample::SetDefaultSkybox(Scene* scene)
     skybox->SetMaterial(cache->GetResource<Material>("Materials/DefaultSkybox.xml"));
 }
 
-void Sample::InitTouchInput()
+void GameState::InitTouchInput()
 {
     touchEnabled_ = true;
 
@@ -130,13 +131,13 @@ void Sample::InitTouchInput()
     input->SetScreenJoystickVisible(screenJoystickSettingsIndex_, true);
 }
 
-void Sample::SetLogoVisible(bool enable)
+void GameState::SetLogoVisible(bool enable)
 {
     if (logoSprite_)
         logoSprite_->SetVisible(enable);
 }
 
-void Sample::CreateLogo()
+void GameState::CreateLogo()
 {
     // Get logo texture
     ResourceCache* cache = GetSubsystem<ResourceCache>();
@@ -173,16 +174,16 @@ void Sample::CreateLogo()
     logoSprite_->SetPriority(-100);
 }
 
-void Sample::SetWindowTitleAndIcon()
+void GameState::SetWindowTitleAndIcon()
 {
     ResourceCache* cache = GetSubsystem<ResourceCache>();
     Graphics* graphics = GetSubsystem<Graphics>();
     Image* icon = cache->GetResource<Image>("Textures/UrhoIcon.png");
     graphics->SetWindowIcon(icon);
-    graphics->SetWindowTitle("rbfx Sample");
+    graphics->SetWindowTitle("rbfx GameState");
 }
 
-void Sample::CreateConsoleAndDebugHud()
+void GameState::CreateConsoleAndDebugHud()
 {
     // Create console
     Console* console = context_->GetSubsystem<Engine>()->CreateConsole();
@@ -192,11 +193,11 @@ void Sample::CreateConsoleAndDebugHud()
 }
 
 
-void Sample::HandleKeyUp(StringHash /*eventType*/, VariantMap& eventData)
+void GameState::HandleKeyUp(StringHash /*eventType*/, VariantMap& eventData)
 {
 }
 
-void Sample::HandleKeyDown(StringHash /*eventType*/, VariantMap& eventData)
+void GameState::HandleKeyDown(StringHash /*eventType*/, VariantMap& eventData)
 {
     using namespace KeyDown;
 
@@ -291,7 +292,7 @@ void Sample::HandleKeyDown(StringHash /*eventType*/, VariantMap& eventData)
     }
 }
 
-void Sample::HandleSceneUpdate(StringHash /*eventType*/, VariantMap& eventData)
+void GameState::HandleSceneUpdate(StringHash /*eventType*/, VariantMap& eventData)
 {
     if (touchEnabled_)
     {
@@ -310,19 +311,19 @@ void Sample::HandleSceneUpdate(StringHash /*eventType*/, VariantMap& eventData)
     }
 }
 
-void Sample::HandleTouchBegin(StringHash /*eventType*/, VariantMap& eventData)
+void GameState::HandleTouchBegin(StringHash /*eventType*/, VariantMap& eventData)
 {
     // On some platforms like Windows the presence of touch input can only be detected dynamically
     InitTouchInput();
     UnsubscribeFromEvent("TouchBegin");
 }
 
-void Sample::CloseSample()
+void GameState::CloseSample()
 {
     SendEvent(E_SAMPLE_EXIT_REQUESTED);
 }
 
-void Sample::PlaySoundEffect(const ea::string& soundName)
+void GameState::PlaySoundEffect(const ea::string& soundName)
 {
     auto* cache = GetSubsystem<ResourceCache>();
     auto* source = scene_->CreateComponent<SoundSource>();

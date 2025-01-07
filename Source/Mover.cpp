@@ -33,6 +33,7 @@
 #include <string>
 
 using namespace MonsterDolls;
+using namespace Urho3D;
 
 Mover3D::Mover3D(Context* context) :
 	LogicComponent(context),
