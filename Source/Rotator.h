@@ -26,7 +26,7 @@
 
 using Urho3D::Vector3;
 
-namespace MonsterDolls
+namespace ZombieDolls
 {
 	/// Custom logic component for rotating a scene node.
 	class Rotator : public Urho3D::LogicComponent

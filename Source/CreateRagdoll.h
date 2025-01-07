@@ -37,7 +37,7 @@ using Urho3D::VariantMap;
 using Urho3D::ShapeType;
 using Urho3D::ConstraintType;
 
-namespace MonsterDolls
+namespace ZombieDolls
 {
 	/// Custom component that creates a ragdoll upon collision.
 	class CreateRagdoll : public Urho3D::Component

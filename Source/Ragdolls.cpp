@@ -64,7 +64,7 @@
 
 #include <Urho3D/DebugNew.h>
 
-using namespace MonsterDolls;
+using namespace ZombieDolls;
 using namespace Urho3D;
 
 // Create animated models

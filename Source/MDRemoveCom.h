@@ -4,7 +4,7 @@
 #include <Urho3D/Scene/Scene.h>
 #include <Urho3D/Scene/LogicComponent.h>
 
-namespace MonsterDolls {
+namespace ZombieDolls {
 	class MDRemoveCom : public Urho3D::LogicComponent
 	{
 		URHO3D_OBJECT(MDRemoveCom, Urho3D::LogicComponent);

@@ -64,7 +64,7 @@ URHO3D_EVENT(E_SAMPLE_EXIT_REQUESTED, SampleExitRequested)
 }
 
 /// Send this event to exit sample.
-namespace MonsterDolls
+namespace ZombieDolls
 {
 	const float TOUCH_SENSITIVITY = 2.0f;
 

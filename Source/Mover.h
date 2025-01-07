@@ -26,7 +26,7 @@
 
 using Urho3D::Vector3;
 
-namespace MonsterDolls
+namespace ZombieDolls
 {
 	class Ragdolls;
 

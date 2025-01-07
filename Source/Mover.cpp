@@ -32,7 +32,7 @@
 #include <EASTL/string.h>
 #include <string>
 
-using namespace MonsterDolls;
+using namespace ZombieDolls;
 using namespace Urho3D;
 
 Mover3D::Mover3D(Context* context) :

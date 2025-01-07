@@ -28,7 +28,7 @@
 
 #include "GameState.h"
 
-namespace MonsterDolls
+namespace ZombieDolls
 {
 	/// Ragdoll example.
 	/// This sample demonstrates:

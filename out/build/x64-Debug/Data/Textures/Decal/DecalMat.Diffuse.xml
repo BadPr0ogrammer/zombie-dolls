@@ -1,6 +1,0 @@
-<texture>
-	<filter mode="bilinear" />
-	<address mode="wrap" />
-	<srgb enable="true" />
-	<mipmap enable="true" />
-</texture>

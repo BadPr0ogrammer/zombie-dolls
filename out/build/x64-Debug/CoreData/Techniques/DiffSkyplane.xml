@@ -1,3 +1,0 @@
-<technique vs="M_Skyplane" ps="M_Skyplane" psdefines="DIFFMAP">
-    <pass name="postopaque" depthwrite="false" />
-</technique>

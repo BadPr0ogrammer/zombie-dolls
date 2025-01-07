@@ -36,7 +36,7 @@
 #include "Mover.h"
 #include "MDRemoveCom.h"
 
-using namespace MonsterDolls;
+using namespace ZombieDolls;
 using namespace Urho3D;
 
 CreateRagdoll::CreateRagdoll(Context* context) :

@@ -46,9 +46,9 @@
 #include "GameApp.h"
 
 // Expands to this example's entry-point
-URHO3D_DEFINE_APPLICATION_MAIN(MonsterDolls::GameApp);
+URHO3D_DEFINE_APPLICATION_MAIN(ZombieDolls::GameApp);
 
-using namespace MonsterDolls;
+using namespace ZombieDolls;
 using namespace Urho3D;
 
 GameApp::GameApp(Context* context) :
@@ -59,9 +59,9 @@ GameApp::GameApp(Context* context) :
 void GameApp::Setup()
 {
 	// Modify engine startup parameters
-	engineParameters_[EP_WINDOW_TITLE] = "Monster Dolls";
-	engineParameters_[EP_APPLICATION_NAME] = "Monster Dolls";
-	engineParameters_[EP_LOG_NAME] = "conf://MonsterDolls.log";
+	engineParameters_[EP_WINDOW_TITLE] = "ZombieDolls";
+	engineParameters_[EP_APPLICATION_NAME] = "zombie-dolls";
+	engineParameters_[EP_LOG_NAME] = "conf://zombie-dolls.log";
 	engineParameters_[EP_BORDERLESS] = false;
 	engineParameters_[EP_HEADLESS] = false;
 	engineParameters_[EP_SOUND] = true;

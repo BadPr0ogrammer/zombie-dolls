@@ -39,7 +39,7 @@ using Urho3D::StringHash;
 using Urho3D::VariantMap;
 using Urho3D::SharedPtr;
 
-namespace MonsterDolls
+namespace ZombieDolls
 {
 	struct SampleInformation
 	{

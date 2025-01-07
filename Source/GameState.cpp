@@ -29,7 +29,7 @@
 #include <Urho3D/Graphics/Skybox.h>
 #include <Urho3D/Graphics/Model.h>
 
-using namespace MonsterDolls;
+using namespace ZombieDolls;
 using namespace Urho3D;
 
 GameState::GameState(Context* context) :

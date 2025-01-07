@@ -1,4 +1,0 @@
-<material>
-    <technique name="Techniques/ShadowOnly.xml" />
-    <shadowcull value="none" />
-</material>
