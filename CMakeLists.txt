@@ -3,11 +3,16 @@ project (zombie-dolls)
 
 set (CMAKE_CXX_STANDARD 17)
 
-set (Urho3D_DIR "../rbfx/build/install/share/CMake")
-message (STATUS "set Urho3D_DIR to ${Urho3D_DIR}")
+if (LINUX) 
+    set (Urho3D_DIR "/usr/local/share/CMake")
+    set (Urho3D_Generated_DIR "/usr/local/share/CMake")
+elseif(WIN32)
+    set (Urho3D_DIR "../rbfx/build/install/share/CMake")
+    set (Urho3D_Generated_DIR "../rbfx/build/install/share/CMake")
+endif()
 
-set (Urho3D_Generated_DIR "../rbfx/build/install/share/CMake")
-message(STATUS "set Urho3D_Generated_DIR to ${Urho3D_Generated_DIR}")
+message (STATUS "set Urho3D_DIR to ${Urho3D_DIR}")
+message (STATUS "set Urho3D_Generated_DIR to ${Urho3D_Generated_DIR}")
 
 if (WIN32)
 add_executable (${PROJECT_NAME} WIN32 ${PROJECT_SOURCE_DIR}/Source/GameApp.cpp ${PROJECT_SOURCE_DIR}/Source/UrhoIcon.rc)
