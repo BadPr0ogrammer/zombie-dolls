@@ -26,9 +26,6 @@
 
 #include <Urho3D/DebugNew.h>
 
-using namespace ZombieDolls;
-using namespace Urho3D;
-
 Rotator::Rotator(Context* context) :
     LogicComponent(context),
     rotationSpeed_(Vector3::ZERO)

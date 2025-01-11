@@ -129,149 +129,53 @@ zombie-dolls/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/build
 .PHONY : zombie-dolls/fast
 
-Source/CreateRagdoll.o: Source/CreateRagdoll.cpp.o
-.PHONY : Source/CreateRagdoll.o
+Source/Character.o: Source/Character.cpp.o
+.PHONY : Source/Character.o
 
 # target to build an object file
-Source/CreateRagdoll.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/CreateRagdoll.cpp.o
-.PHONY : Source/CreateRagdoll.cpp.o
+Source/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Character.cpp.o
+.PHONY : Source/Character.cpp.o
 
-Source/CreateRagdoll.i: Source/CreateRagdoll.cpp.i
-.PHONY : Source/CreateRagdoll.i
+Source/Character.i: Source/Character.cpp.i
+.PHONY : Source/Character.i
 
 # target to preprocess a source file
-Source/CreateRagdoll.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/CreateRagdoll.cpp.i
-.PHONY : Source/CreateRagdoll.cpp.i
+Source/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Character.cpp.i
+.PHONY : Source/Character.cpp.i
 
-Source/CreateRagdoll.s: Source/CreateRagdoll.cpp.s
-.PHONY : Source/CreateRagdoll.s
+Source/Character.s: Source/Character.cpp.s
+.PHONY : Source/Character.s
 
 # target to generate assembly for a file
-Source/CreateRagdoll.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/CreateRagdoll.cpp.s
-.PHONY : Source/CreateRagdoll.cpp.s
+Source/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Character.cpp.s
+.PHONY : Source/Character.cpp.s
 
-Source/GameApp.o: Source/GameApp.cpp.o
-.PHONY : Source/GameApp.o
+Source/CharacterDemo.o: Source/CharacterDemo.cpp.o
+.PHONY : Source/CharacterDemo.o
 
 # target to build an object file
-Source/GameApp.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/GameApp.cpp.o
-.PHONY : Source/GameApp.cpp.o
+Source/CharacterDemo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/CharacterDemo.cpp.o
+.PHONY : Source/CharacterDemo.cpp.o
 
-Source/GameApp.i: Source/GameApp.cpp.i
-.PHONY : Source/GameApp.i
-
-# target to preprocess a source file
-Source/GameApp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/GameApp.cpp.i
-.PHONY : Source/GameApp.cpp.i
-
-Source/GameApp.s: Source/GameApp.cpp.s
-.PHONY : Source/GameApp.s
-
-# target to generate assembly for a file
-Source/GameApp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/GameApp.cpp.s
-.PHONY : Source/GameApp.cpp.s
-
-Source/GameState.o: Source/GameState.cpp.o
-.PHONY : Source/GameState.o
-
-# target to build an object file
-Source/GameState.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/GameState.cpp.o
-.PHONY : Source/GameState.cpp.o
-
-Source/GameState.i: Source/GameState.cpp.i
-.PHONY : Source/GameState.i
+Source/CharacterDemo.i: Source/CharacterDemo.cpp.i
+.PHONY : Source/CharacterDemo.i
 
 # target to preprocess a source file
-Source/GameState.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/GameState.cpp.i
-.PHONY : Source/GameState.cpp.i
+Source/CharacterDemo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/CharacterDemo.cpp.i
+.PHONY : Source/CharacterDemo.cpp.i
 
-Source/GameState.s: Source/GameState.cpp.s
-.PHONY : Source/GameState.s
-
-# target to generate assembly for a file
-Source/GameState.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/GameState.cpp.s
-.PHONY : Source/GameState.cpp.s
-
-Source/MDRemoveCom.o: Source/MDRemoveCom.cpp.o
-.PHONY : Source/MDRemoveCom.o
-
-# target to build an object file
-Source/MDRemoveCom.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/MDRemoveCom.cpp.o
-.PHONY : Source/MDRemoveCom.cpp.o
-
-Source/MDRemoveCom.i: Source/MDRemoveCom.cpp.i
-.PHONY : Source/MDRemoveCom.i
-
-# target to preprocess a source file
-Source/MDRemoveCom.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/MDRemoveCom.cpp.i
-.PHONY : Source/MDRemoveCom.cpp.i
-
-Source/MDRemoveCom.s: Source/MDRemoveCom.cpp.s
-.PHONY : Source/MDRemoveCom.s
+Source/CharacterDemo.s: Source/CharacterDemo.cpp.s
+.PHONY : Source/CharacterDemo.s
 
 # target to generate assembly for a file
-Source/MDRemoveCom.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/MDRemoveCom.cpp.s
-.PHONY : Source/MDRemoveCom.cpp.s
-
-Source/Mover.o: Source/Mover.cpp.o
-.PHONY : Source/Mover.o
-
-# target to build an object file
-Source/Mover.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Mover.cpp.o
-.PHONY : Source/Mover.cpp.o
-
-Source/Mover.i: Source/Mover.cpp.i
-.PHONY : Source/Mover.i
-
-# target to preprocess a source file
-Source/Mover.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Mover.cpp.i
-.PHONY : Source/Mover.cpp.i
-
-Source/Mover.s: Source/Mover.cpp.s
-.PHONY : Source/Mover.s
-
-# target to generate assembly for a file
-Source/Mover.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Mover.cpp.s
-.PHONY : Source/Mover.cpp.s
-
-Source/Ragdolls.o: Source/Ragdolls.cpp.o
-.PHONY : Source/Ragdolls.o
-
-# target to build an object file
-Source/Ragdolls.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Ragdolls.cpp.o
-.PHONY : Source/Ragdolls.cpp.o
-
-Source/Ragdolls.i: Source/Ragdolls.cpp.i
-.PHONY : Source/Ragdolls.i
-
-# target to preprocess a source file
-Source/Ragdolls.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Ragdolls.cpp.i
-.PHONY : Source/Ragdolls.cpp.i
-
-Source/Ragdolls.s: Source/Ragdolls.cpp.s
-.PHONY : Source/Ragdolls.s
-
-# target to generate assembly for a file
-Source/Ragdolls.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Ragdolls.cpp.s
-.PHONY : Source/Ragdolls.cpp.s
+Source/CharacterDemo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/CharacterDemo.cpp.s
+.PHONY : Source/CharacterDemo.cpp.s
 
 Source/Rotator.o: Source/Rotator.cpp.o
 .PHONY : Source/Rotator.o
@@ -297,6 +201,54 @@ Source/Rotator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Rotator.cpp.s
 .PHONY : Source/Rotator.cpp.s
 
+Source/Sample.o: Source/Sample.cpp.o
+.PHONY : Source/Sample.o
+
+# target to build an object file
+Source/Sample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Sample.cpp.o
+.PHONY : Source/Sample.cpp.o
+
+Source/Sample.i: Source/Sample.cpp.i
+.PHONY : Source/Sample.i
+
+# target to preprocess a source file
+Source/Sample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Sample.cpp.i
+.PHONY : Source/Sample.cpp.i
+
+Source/Sample.s: Source/Sample.cpp.s
+.PHONY : Source/Sample.s
+
+# target to generate assembly for a file
+Source/Sample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/Sample.cpp.s
+.PHONY : Source/Sample.cpp.s
+
+Source/SamplesManager.o: Source/SamplesManager.cpp.o
+.PHONY : Source/SamplesManager.o
+
+# target to build an object file
+Source/SamplesManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/SamplesManager.cpp.o
+.PHONY : Source/SamplesManager.cpp.o
+
+Source/SamplesManager.i: Source/SamplesManager.cpp.i
+.PHONY : Source/SamplesManager.i
+
+# target to preprocess a source file
+Source/SamplesManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/SamplesManager.cpp.i
+.PHONY : Source/SamplesManager.cpp.i
+
+Source/SamplesManager.s: Source/SamplesManager.cpp.s
+.PHONY : Source/SamplesManager.s
+
+# target to generate assembly for a file
+Source/SamplesManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zombie-dolls.dir/build.make CMakeFiles/zombie-dolls.dir/Source/SamplesManager.cpp.s
+.PHONY : Source/SamplesManager.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,27 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... zombie-dolls"
-	@echo "... Source/CreateRagdoll.o"
-	@echo "... Source/CreateRagdoll.i"
-	@echo "... Source/CreateRagdoll.s"
-	@echo "... Source/GameApp.o"
-	@echo "... Source/GameApp.i"
-	@echo "... Source/GameApp.s"
-	@echo "... Source/GameState.o"
-	@echo "... Source/GameState.i"
-	@echo "... Source/GameState.s"
-	@echo "... Source/MDRemoveCom.o"
-	@echo "... Source/MDRemoveCom.i"
-	@echo "... Source/MDRemoveCom.s"
-	@echo "... Source/Mover.o"
-	@echo "... Source/Mover.i"
-	@echo "... Source/Mover.s"
-	@echo "... Source/Ragdolls.o"
-	@echo "... Source/Ragdolls.i"
-	@echo "... Source/Ragdolls.s"
+	@echo "... Source/Character.o"
+	@echo "... Source/Character.i"
+	@echo "... Source/Character.s"
+	@echo "... Source/CharacterDemo.o"
+	@echo "... Source/CharacterDemo.i"
+	@echo "... Source/CharacterDemo.s"
 	@echo "... Source/Rotator.o"
 	@echo "... Source/Rotator.i"
 	@echo "... Source/Rotator.s"
+	@echo "... Source/Sample.o"
+	@echo "... Source/Sample.i"
+	@echo "... Source/Sample.s"
+	@echo "... Source/SamplesManager.o"
+	@echo "... Source/SamplesManager.i"
+	@echo "... Source/SamplesManager.s"
 .PHONY : help
 
 

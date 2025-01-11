@@ -15,9 +15,9 @@ message (STATUS "set Urho3D_DIR to ${Urho3D_DIR}")
 message (STATUS "set Urho3D_Generated_DIR to ${Urho3D_Generated_DIR}")
 
 if (WIN32)
-add_executable (${PROJECT_NAME} WIN32 ${PROJECT_SOURCE_DIR}/Source/GameApp.cpp ${PROJECT_SOURCE_DIR}/Source/UrhoIcon.rc)
+add_executable (${PROJECT_NAME} WIN32 ${PROJECT_SOURCE_DIR}/Source/SamplesManager.cpp ${PROJECT_SOURCE_DIR}/Source/UrhoIcon.rc)
 else()
-add_executable (${PROJECT_NAME}       ${PROJECT_SOURCE_DIR}/Source/GameApp.cpp)
+add_executable (${PROJECT_NAME}       ${PROJECT_SOURCE_DIR}/Source/SamplesManager.cpp)
 endif()
 
 set (CMAKE_BUILD_TYPE Debug)
