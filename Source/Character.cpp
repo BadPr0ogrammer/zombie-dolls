@@ -67,9 +67,14 @@ void Character::Start()
 void Character::FixedUpdate(float timeStep)
 {
     auto* cache = GetSubsystem<ResourceCache>();
+    /*
     auto* runAnimation = cache->GetResource<Animation>("Models/Mutant/Mutant_Run.ani");
     auto* idleAnimation = cache->GetResource<Animation>("Models/Mutant/Mutant_Idle0.ani");
     auto* jumpAnimation = cache->GetResource<Animation>("Models/Mutant/Mutant_Jump1.ani");
+    */
+    auto* runAnimation = cache->GetResource<Animation>("Models/Combat_walk_forward.fbx.d/Animations/mixamo.com.ani");
+    auto* idleAnimation = cache->GetResource<Animation>("Models/Combat_idle.fbx.d/Animations/mixamo.com.ani");
+    auto* jumpAnimation = cache->GetResource<Animation>("Models/Combat_jump_up.fbx.d/Animations/mixamo.com.ani");
 
     /// \todo Could cache the components for faster access instead of finding them each frame
     auto* body = GetComponent<RigidBody>();
@@ -131,7 +136,9 @@ void Character::FixedUpdate(float timeStep)
             animCtrl->PlayExistingExclusive(AnimationParameters{idleAnimation}.Looped(), 0.2f);
 
         // Set walk animation speed proportional to velocity
-        animCtrl->SetSpeed("Models/Mutant/Mutant_Run.ani", planeVelocity.Length() * 0.3f);
+        //animCtrl->SetSpeed("Models/Mutant/Mutant_Run.ani", planeVelocity.Length() * 0.3f);
+
+        animCtrl->SetSpeed("Models/Combat_walk_forward.fbx.d/Animations/mixamo.com.ani", planeVelocity.Length() * 0.3f);        
     }
 
     // Reset grounded flag for next frame

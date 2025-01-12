@@ -50,6 +50,10 @@
 
 #include <Urho3D/DebugNew.h>
 
+#include <RmlUi/Core/Log.h>
+#include <RmlUi/Core/Debug.h>
+#include <EASTL/algorithm.h>
+
 const float CAMERA_MIN_DIST = 1.0f;
 const float CAMERA_INITIAL_DIST = 5.0f;
 const float CAMERA_MAX_DIST = 20.0f;
@@ -63,7 +67,7 @@ CharacterDemo::CharacterDemo(Context* context)
     // / saved
     if (!context->IsReflected<Character>())
         Character::RegisterObject(context);
-}
+    }
 
 CharacterDemo::~CharacterDemo() = default;
 
@@ -204,23 +208,45 @@ void CharacterDemo::CreateScene()
 void CharacterDemo::CreateCharacter()
 {
     auto* cache = GetSubsystem<ResourceCache>();
-
     Node* objectNode = scene_->CreateChild("Jack");
-    objectNode->SetPosition(Vector3(0.0f, 1.0f, 0.0f));
+    objectNode->SetPosition(Vector3(0.0f, 1.0f, 0.0f));    
 
     // spin node
     Node* adjustNode = objectNode->CreateChild("AdjNode");
-    adjustNode->SetRotation(Quaternion(180, Vector3(0, 1, 0)));
+    //adjustNode->SetRotation(Quaternion(180, Vector3(0, 1, 0)));//back face    
 
     // Create the rendering component + animation controller
-    auto* object = adjustNode->CreateComponent<AnimatedModel>();
-    object->SetModel(cache->GetResource<Model>("Models/Mutant/Mutant.mdl"));
-    object->SetMaterial(cache->GetResource<Material>("Models/Mutant/Materials/mutant_M.xml"));
+    auto* object = adjustNode->CreateComponent<AnimatedModel>();    
+    //object->SetModel(cache->GetResource<Model>("Models/Mutant/Mutant.mdl"));
+    //object->SetMaterial(cache->GetResource<Material>("Models/Mutant/Materials/mutant_M.xml"));    
+    
+    object->SetModel(cache->GetResource<Model>("Models/Combat_idle.fbx.d/Models/Soldier_body.mdl"));    
+    object->SetMaterial(cache->GetResource<Material>("Models/Combat_idle.fbx.d/Materials/Soldier_body1_LitNormalMap.xml"));    
+    
+    // object->GetSkeleton().GetBone("Mutant:Head")->animated_ = false;
+    Bone* bone = 0;
+    Node* neck = 0;
+    if (bone = object->GetSkeleton().GetBone("Neck")) 
+        neck = bone->node_;
+    if (!neck) 
+        ea::for_each(object->GetSkeleton().GetBones().begin(), object->GetSkeleton().GetBones().end(), [&] (const Bone& b) {
+            Rml::Log::Message(Rml::Log::LT_DEBUG, "bone %s.", b.name_.c_str());
+            if (b.name_.find("Neck") != ea::string::npos) 
+                neck = b.node_;
+        });
+    
+    if (neck) {
+        auto* objectHead = neck->CreateComponent<StaticModel>();    
+        objectHead->SetModel(cache->GetResource<Model>("Models/Combat_idle.fbx.d/Models/Soldier_head.mdl"));    
+        objectHead->SetMaterial(cache->GetResource<Material>("Models/Combat_idle.fbx.d/Materials/Soldier_head6_LitNormalMap.xml"));    
+        objectHead->GetNode()->SetPosition(Vector3(-0.05, -1.3, -0.5));
+    }
+
     object->SetCastShadows(true);
     adjustNode->CreateComponent<AnimationController>();
 
     // Set the head bone for manual control
-    object->GetSkeleton().GetBone("Mutant:Head")->animated_ = false;
+    ///// object->GetSkeleton().GetBone("Mutant:Head")->animated_ = false;
 
     // Create rigidbody, and set non-zero mass so that the body becomes dynamic
     auto* body = objectNode->CreateComponent<RigidBody>();
@@ -233,7 +259,7 @@ void CharacterDemo::CreateCharacter()
 
     // Set the rigidbody to signal collision also when in rest, so that we get ground collisions properly
     body->SetCollisionEventMode(COLLISION_ALWAYS);
-
+    
     // Set a capsule shape for collision
     auto* shape = objectNode->CreateComponent<CollisionShape>();
     shape->SetCapsule(0.7f, 1.8f, Vector3(0.0f, 0.9f, 0.0f));
@@ -333,16 +359,17 @@ void CharacterDemo::HandlePostUpdate(StringHash eventType, VariantMap& eventData
     Quaternion dir = rot * Quaternion(character_->GetPitch(), Vector3::RIGHT);
 
     // Turn head to camera pitch, but limit to avoid unnatural animation
+/*
     Node* headNode = characterNode->GetChild("Mutant:Head", true);
     float limitPitch = Clamp(character_->GetPitch(), -45.0f, 45.0f);
     Quaternion headDir = rot * Quaternion(limitPitch, Vector3(1.0f, 0.0f, 0.0f));
     // This could be expanded to look at an arbitrary target, now just look at a point in front
     Vector3 headWorldTarget = headNode->GetWorldPosition() + headDir * Vector3(0.0f, 0.0f, -1.0f);
     headNode->LookAt(headWorldTarget, Vector3(0.0f, 1.0f, 0.0f));
-
+*/
     if (firstPerson_)
     {
-        cameraNode_->SetPosition(headNode->GetWorldPosition() + rot * Vector3(0.0f, 0.15f, 0.2f));
+        //////////////// cameraNode_->SetPosition(headNode->GetWorldPosition() + rot * Vector3(0.0f, 0.15f, 0.2f));
         cameraNode_->SetRotation(dir);
     }
     else
