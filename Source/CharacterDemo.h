@@ -119,6 +119,8 @@ private:
     WeakPtr<Character> character_;
     // for swat head
     WeakPtr<Node> headNode_;
+    // child gun node
+    WeakPtr<Node> gunNode_;
     /// First person camera flag.
     bool firstPerson_;
     DirectionalPadAdapter dPadAdapter_;

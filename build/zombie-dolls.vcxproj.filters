@@ -10,6 +10,12 @@
     <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\CharacterDemo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\CreateRagdoll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\Ragdolls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\Rotator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -22,6 +28,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\CharacterDemo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\CreateRagdoll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\Ragdolls.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\Rotator.h">

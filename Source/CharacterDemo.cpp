@@ -222,7 +222,7 @@ void CharacterDemo::CreateCharacter()
     
     object->SetModel(cache->GetResource<Model>("Models/Combat_idle.fbx.d/Models/Soldier_body.mdl"));    
     object->SetMaterial(cache->GetResource<Material>("Models/Combat_idle.fbx.d/Materials/Soldier_body1_LitNormalMap.xml"));    
-    
+
     // object->GetSkeleton().GetBone("Mutant:Head")->animated_ = false;
     Bone* bone = 0;
     Node* neck = 0;
@@ -236,6 +236,19 @@ void CharacterDemo::CreateCharacter()
         headNode_ = objectHead->GetNode();
         headNode_->SetPosition(Vector3(0.0, -1.48, 0.0));
     }
+    
+    Bone* bone1 = 0;
+    if (bone1 = object->GetSkeleton().GetBone("LeftHandIndex1"))
+        gunNode_ = bone1->node_->CreateChild("Gun");
+
+    gunNode_->SetPosition(Vector3(-0.15f, -0.15f, 0.0f));
+    auto* model = gunNode_->CreateComponent<StaticModel>();
+    model->SetModel(cache->GetResource<Model>("Models/ar_style_gun.fbx.d/Models/ar15.mdl"));
+    model->SetCastShadows(true);
+
+    auto q = Quaternion(0.0, 0.0, -45.0);
+    gunNode_->SetRotation(q);
+    gunNode_->SetScale(10.0f);
 
     object->SetCastShadows(true);
     adjustNode->CreateComponent<AnimationController>();
@@ -364,7 +377,7 @@ void CharacterDemo::HandlePostUpdate(StringHash eventType, VariantMap& eventData
     if (firstPerson_)
     {
         //cameraNode_->SetPosition(headNode->GetWorldPosition() + rot * Vector3(0.0f, 0.15f, 0.2f));
-        cameraNode_->SetPosition(headNode_->GetWorldPosition() + rot * Vector3(0.0f, 1.3f, 0.5f));
+        cameraNode_->SetPosition(headNode_->GetWorldPosition() + rot * Vector3(0.2f, 0.15f, 0.2f));
         cameraNode_->SetRotation(dir);
     }
     else
