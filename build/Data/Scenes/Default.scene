@@ -111,7 +111,7 @@
 		<node _id="4">
 			<attributes>
 				<attribute name="Name" type="String" value="Global Light" />
-				<attribute name="Rotation" type="Quaternion" value="0.888074 0.325058 0.325058 0" />
+				<attribute name="Rotation" type="Quaternion" value="0.888074 0.325058 0.325058 -0" />
 			</attributes>
 			<components>
 				<component _id="5" _typeName="Light">

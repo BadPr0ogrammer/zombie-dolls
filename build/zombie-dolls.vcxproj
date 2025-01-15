@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9D6BA7DF-1343-34A5-A204-D70567F70FA9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>zombie-dolls</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\andre\work\zombie-dolls\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zombie-dolls.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zombie-dolls</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\andre\work\zombie-dolls\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zombie-dolls.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zombie-dolls</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\andre\work\zombie-dolls\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zombie-dolls.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zombie-dolls</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\andre\work\zombie-dolls\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zombie-dolls.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zombie-dolls</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/andre/work/rbfx/build/install/include" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/SDL" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/STB" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/backends" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/cpp" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/freetype" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGuizmo" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/nativefiledialog" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/Bullet" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/tracy"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";RMLUI_DEBUG_BUILD=1;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";RMLUI_DEBUG_BUILD=1;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\andre\work\rbfx\build\install\lib\Debug\Urho3D.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\openxr_loaderd.lib;advapi32.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\TracyClient.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/andre/work/zombie-dolls/build/Debug/zombie-dolls.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/andre/work/zombie-dolls/build/Debug/zombie-dolls.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/andre/work/rbfx/build/install/include" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/SDL" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/STB" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/backends" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/cpp" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/freetype" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGuizmo" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/nativefiledialog" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/Bullet" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/tracy"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=0;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=0;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";RMLUI_DEBUG_BUILD=0;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;URHO3D_DEBUG=1;EASTL_DEBUG=1;RMLUI_DEBUG_BUILD=1;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=0;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=0;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";RMLUI_DEBUG_BUILD=0;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;URHO3D_DEBUG=1;EASTL_DEBUG=1;RMLUI_DEBUG_BUILD=1;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\andre\work\rbfx\build\install\lib\Debug\Urho3D.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\openxr_loaderd.lib;advapi32.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\TracyClient.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/andre/work/zombie-dolls/build/Release/zombie-dolls.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/andre/work/zombie-dolls/build/Release/zombie-dolls.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/andre/work/rbfx/build/install/include" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/SDL" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/STB" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/backends" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/cpp" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/freetype" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGuizmo" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/nativefiledialog" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/Bullet" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/tracy"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=0;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=0;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";RMLUI_DEBUG_BUILD=0;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;URHO3D_DEBUG=1;EASTL_DEBUG=1;RMLUI_DEBUG_BUILD=1;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=0;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=0;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";RMLUI_DEBUG_BUILD=0;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;URHO3D_DEBUG=1;EASTL_DEBUG=1;RMLUI_DEBUG_BUILD=1;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\andre\work\rbfx\build\install\lib\Debug\Urho3D.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\openxr_loaderd.lib;advapi32.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\TracyClient.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/andre/work/zombie-dolls/build/MinSizeRel/zombie-dolls.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/andre/work/zombie-dolls/build/MinSizeRel/zombie-dolls.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/andre/work/rbfx/build/install/include" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/SDL" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/STB" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/backends" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/cpp" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGui/misc/freetype" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/ImGuizmo" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/nativefiledialog" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/Bullet" /external:I "C:/Users/andre/work/rbfx/build/install/include/Urho3D/ThirdParty/tracy"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE="RmlUi/Config/RbfxConfig.h";RMLUI_DEBUG_BUILD=0;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;RMLUI_DEBUG_BUILD=1;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;URHO3D_64BIT;URHO3D_ACTIONS;URHO3D_DEBUG_ASSERT;URHO3D_ENABLE_ALL;URHO3D_FILEWATCHER;URHO3D_GLOW;URHO3D_HASH_DEBUG;URHO3D_IK;URHO3D_LOGGING;URHO3D_MINIDUMPS;URHO3D_NAVIGATION;URHO3D_NETWORK;URHO3D_PARALLEL_BUILD;URHO3D_PARTICLE_GRAPH;URHO3D_PCH;URHO3D_PHYSICS;URHO3D_PHYSICS2D;URHO3D_PLUGINS;URHO3D_PROFILING;URHO3D_RMLUI;URHO3D_SHADER_OPTIMIZER;URHO3D_SHADER_TRANSLATOR;URHO3D_SYSTEMUI;URHO3D_SYSTEMUI_VIEWPORTS;URHO3D_THREADING;URHO3D_URHO2D;URHO3D_WEBP;URHO3D_WINVER;URHO3D_XR;NOMINMAX;URHO3D_DEBUG=1;DESKTOP=1;LZ4_DLL_IMPORT=1;PUGIXML_IMPORTS;SDL_IMPORTS;STB_VORBIS_HEADER_ONLY=1;CIVETWEB_DLL_IMPORTS;BOX2D_IMPORTS;IMGUI_DEFINE_MATH_OPERATORS=1;USE_IMGUI_API=1;IMGUI_IMPORTS;GLEW_BUILD=1;GLEW_NO_GLU;NFD_SHARED;FMT_USE_RVALUE_REFERENCES=1;FMT_USE_VARIADIC_TEMPLATES=1;FMT_SHARED;SPDLOG_FMT_EXTERNAL=1;SPDLOG_DISABLE_DEFAULT_LOGGER=1;EASTL_OPENSOURCE=1;EASTL_RTTI_ENABLED=0;EASTL_URHO3D_EXTENSIONS=1;EASTL_SIZE_T_32BIT=1;EASTDC_GLOBALPTR_SUPPORT_ENABLED=0;EASTDC_THREADING_SUPPORTED=0;EASTL_STD_ITERATOR_CATEGORY_ENABLED=1;EASTL_DEBUG=1;EA_DLL;RMLUI_NO_THIRDPARTY_CONTAINERS=1;RMLUI_CUSTOM_CONFIGURATION_FILE=\"RmlUi/Config/RbfxConfig.h\";RMLUI_DEBUG_BUILD=0;ENKITS_TASK_PRIORITIES_NUM=5;RTC_STATIC;RTC_ENABLE_WEBSOCKET=1;RTC_ENABLE_MEDIA=0;URHO3D_SSE;RMLUI_DEBUG_BUILD=1;BT_USE_SSE=1;TRACY_ENABLE;TRACY_ON_DEMAND;TRACY_IMPORTS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\andre\work\zombie-dolls\Source;C:\Users\andre\work\rbfx\build\install\include;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\SDL;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\STB;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\backends;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\cpp;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGui\misc\freetype;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\ImGuizmo;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\nativefiledialog;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\Bullet;C:\Users\andre\work\rbfx\build\install\include\Urho3D\ThirdParty\tracy;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\andre\work\rbfx\build\install\lib\Debug\Urho3D.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\openxr_loaderd.lib;advapi32.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\Bullet.lib;user32.lib;gdi32.lib;imm32.lib;version.lib;winmm.lib;setupapi.lib;ws2_32.lib;opengl32.lib;ws2_32.lib;dbghelp.lib;rpcrt4.lib;C:\Users\andre\work\rbfx\build\install\lib\Debug\TracyClient.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/andre/work/zombie-dolls/build/RelWithDebInfo/zombie-dolls.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/andre/work/zombie-dolls/build/RelWithDebInfo/zombie-dolls.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\andre\work\zombie-dolls\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/andre/work/zombie-dolls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/andre/work/zombie-dolls -BC:/Users/andre/work/zombie-dolls/build --check-stamp-file C:/Users/andre/work/zombie-dolls/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D-debug.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3DConfig.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCXXCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeRCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\andre\work\zombie-dolls\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/andre/work/zombie-dolls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/andre/work/zombie-dolls -BC:/Users/andre/work/zombie-dolls/build --check-stamp-file C:/Users/andre/work/zombie-dolls/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D-debug.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3DConfig.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCXXCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeRCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\andre\work\zombie-dolls\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/andre/work/zombie-dolls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/andre/work/zombie-dolls -BC:/Users/andre/work/zombie-dolls/build --check-stamp-file C:/Users/andre/work/zombie-dolls/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D-debug.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3DConfig.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCXXCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeRCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\andre\work\zombie-dolls\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/andre/work/zombie-dolls/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/andre/work/zombie-dolls -BC:/Users/andre/work/zombie-dolls/build --check-stamp-file C:/Users/andre/work/zombie-dolls/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D-debug.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3D.cmake;C:\Users\andre\work\rbfx\build\install\share\CMake\Urho3DConfig.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeCXXCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeRCCompiler.cmake;C:\Users\andre\work\zombie-dolls\build\CMakeFiles\3.31.4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\andre\work\zombie-dolls\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\SamplesManager.cpp" />
+    <ResourceCompile Include="C:\Users\andre\work\zombie-dolls\Source\UrhoIcon.rc" />
+    <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\Character.cpp" />
+    <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\Character.h" />
+    <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\CharacterDemo.cpp" />
+    <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\CharacterDemo.h" />
+    <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\Rotator.cpp" />
+    <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\Rotator.h" />
+    <ClCompile Include="C:\Users\andre\work\zombie-dolls\Source\Sample.cpp" />
+    <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\Sample.h" />
+    <ClInclude Include="C:\Users\andre\work\zombie-dolls\Source\SamplesManager.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\andre\work\zombie-dolls\build\ZERO_CHECK.vcxproj">
+      <Project>{58DCD481-DD04-3F37-A135-14E702A27498}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
