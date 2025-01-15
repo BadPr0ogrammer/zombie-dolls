@@ -117,6 +117,8 @@ private:
 
     /// The controllable character component.
     WeakPtr<Character> character_;
+    // for swat head
+    WeakPtr<Node> headNode_;
     /// First person camera flag.
     bool firstPerson_;
     DirectionalPadAdapter dPadAdapter_;

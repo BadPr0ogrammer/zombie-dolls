@@ -226,20 +226,15 @@ void CharacterDemo::CreateCharacter()
     // object->GetSkeleton().GetBone("Mutant:Head")->animated_ = false;
     Bone* bone = 0;
     Node* neck = 0;
-    if (bone = object->GetSkeleton().GetBone("Neck")) 
+    if (bone = object->GetSkeleton().GetBone("Neck1")) 
         neck = bone->node_;
-    if (!neck) 
-        ea::for_each(object->GetSkeleton().GetBones().begin(), object->GetSkeleton().GetBones().end(), [&] (const Bone& b) {
-            Rml::Log::Message(Rml::Log::LT_DEBUG, "bone %s.", b.name_.c_str());
-            if (b.name_.find("Neck") != ea::string::npos) 
-                neck = b.node_;
-        });
     
     if (neck) {
-        auto* objectHead = neck->CreateComponent<StaticModel>();    
+        auto* objectHead = neck->CreateComponent<AnimatedModel>();
         objectHead->SetModel(cache->GetResource<Model>("Models/Combat_idle.fbx.d/Models/Soldier_head.mdl"));    
         objectHead->SetMaterial(cache->GetResource<Material>("Models/Combat_idle.fbx.d/Materials/Soldier_head6_LitNormalMap.xml"));    
-        objectHead->GetNode()->SetPosition(Vector3(-0.05, -1.3, -0.5));
+        headNode_ = objectHead->GetNode();
+        headNode_->SetPosition(Vector3(0.0, -1.48, 0.0));
     }
 
     object->SetCastShadows(true);
@@ -359,17 +354,17 @@ void CharacterDemo::HandlePostUpdate(StringHash eventType, VariantMap& eventData
     Quaternion dir = rot * Quaternion(character_->GetPitch(), Vector3::RIGHT);
 
     // Turn head to camera pitch, but limit to avoid unnatural animation
-/*
-    Node* headNode = characterNode->GetChild("Mutant:Head", true);
-    float limitPitch = Clamp(character_->GetPitch(), -45.0f, 45.0f);
-    Quaternion headDir = rot * Quaternion(limitPitch, Vector3(1.0f, 0.0f, 0.0f));
+    //Node* headNode = characterNode->GetChild("Mutant:Head", true); 
+    //float limitPitch = Clamp(character_->GetPitch(), -45.0f, 45.0f);
+    //Quaternion headDir = rot * Quaternion(limitPitch, Vector3(1.0f, 0.0f, 0.0f));
     // This could be expanded to look at an arbitrary target, now just look at a point in front
-    Vector3 headWorldTarget = headNode->GetWorldPosition() + headDir * Vector3(0.0f, 0.0f, -1.0f);
-    headNode->LookAt(headWorldTarget, Vector3(0.0f, 1.0f, 0.0f));
-*/
+    //Vector3 headWorldTarget = headNode->GetWorldPosition() + headDir * Vector3(0.0f, 0.0f, -1.0f); 
+    //headNode_->LookAt(headWorldTarget, Vector3(0.0f, 1.0f, 0.0f));
+
     if (firstPerson_)
     {
-        //////////////// cameraNode_->SetPosition(headNode->GetWorldPosition() + rot * Vector3(0.0f, 0.15f, 0.2f));
+        //cameraNode_->SetPosition(headNode->GetWorldPosition() + rot * Vector3(0.0f, 0.15f, 0.2f));
+        cameraNode_->SetPosition(headNode_->GetWorldPosition() + rot * Vector3(0.0f, 1.3f, 0.5f));
         cameraNode_->SetRotation(dir);
     }
     else
