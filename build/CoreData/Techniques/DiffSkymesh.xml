@@ -1,3 +1,0 @@
-<technique vs="M_Skymesh" ps="M_Skymesh">
-    <pass name="postopaque" depthwrite="false" />
-</technique>
